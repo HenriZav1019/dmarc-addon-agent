@@ -1,15 +1,76 @@
-# DMARC Add-On Agent MVP
+# DMARC Add-On Agent
 
-Lightweight visibility and troubleshooting tool for DMARC, DKIM, and SPF.
+A lightweight analysis tool for DMARC, SPF, and DKIM with sender intelligence and aggregate report insights.
 
-## Features
-- Domain Analyzer
-- Header Analyzer
-- DMARC Aggregate XML parsing
-- SPF lookup and expansion analysis
-- DKIM selector and key strength checks
-- Sender mapping and suspicious sender signals
-- History and sender inventory export
+## 🔗 Live App
+
+(https://henrizav1019-dmarc-addon-agent-app-mmbumf.streamlit.app/)
+
+---
+
+## ✨ Features
+
+### 🌐 Domain Analyzer
+
+* DMARC, SPF, DKIM validation
+* SPF deep analysis (includes, lookups, expansion)
+* DKIM selector discovery
+* Health scoring and recommendations
+
+### 📧 Header Analyzer
+
+* Authentication results parsing (SPF, DKIM, DMARC)
+* Sender identity breakdown
+* Alignment analysis
+* Suspicious / shadow sender detection
+* DNS enrichment
+
+### 🕘 History
+
+* Saved domain scans
+* Sender inventory tracking
+* Trend visualization
+
+### 📥 DMARC Reports
+
+* Aggregate XML parsing
+* Priority issue detection
+* Sender correlation
+* High-risk source identification
+
+---
+
+## 🧠 Use Cases
+
+* Email security troubleshooting
+* DMARC policy deployment
+* Identifying unauthorized senders
+* SPF optimization
+* Vendor / sender validation
+
+---
+
+## ⚙️ Run locally
+
+```bash
+python -m venv .venv
+.\.venv\Scripts\activate
+pip install -r requirements.txt
+python -m streamlit run app.py
+```
+
+---
+
+## 🚀 Deployment
+
+This app is deployed using Streamlit Community Cloud and automatically updates from GitHub.
+
+---
+
+## 📌 Author
+
+Henri Zavala
+
 
 ## Run locally
 ```bash
